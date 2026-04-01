@@ -1,0 +1,161 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+
+nav {
+  background-color: #1a4d2e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav h1 {
+  font-size: 2rem;
+}
+
+nav p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+
+.filters {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  background: white;
+  flex-wrap: wrap;       
+  border-bottom: 1px solid #ddd;
+}
+
+
+.filters input {
+  flex: 1;               
+  min-width: 200px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+
+.filters select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: white;
+}
+
+
+.result-count {
+  padding: 12px 20px;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+
+#cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 10px 20px 40px 20px;
+}
+
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+.card {
+  border-top: 4px solid #2d7a4f;
+}
+
+
+.card h2 {
+  font-size: 1.1rem;
+  color: #1a4d2e;
+  margin-bottom: 4px;
+}
+
+
+.card .sub {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.prices {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+
+.price-box {
+  flex: 1;
+  background: #f5f5f5;
+  border-radius: 6px;
+  padding: 8px;
+  text-align: center;
+}
+
+.price-box .label {
+  font-size: 0.65rem;
+  color: #999;
+  text-transform: uppercase;
+}
+.price-box .value {
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+
+.price-box .value.min   { color: #e53e3e; }  
+.price-box .value.modal { color: #1a4d2e; }  
+.price-box .value.max   { color: #38a169; }  
+
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  font-size: 0.78rem;
+  color: #888;
+}
+
+
+.badge {
+  background: #d4edda;
+  color: #1a4d2e;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.72rem;
+}
+
+.message {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 1.1rem;
+  color: #666;
+  grid-column: 1 / -1;  
+}

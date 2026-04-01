@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishi Bazaar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ 
+  <nav>
+    <h1>🌾 Krishi Bazaar</h1>
+    <p>Live Mandi Prices from data.gov.in</p>
+  </nav>
+
+  
+  <div class="filters">
+
+    
+    <input type="text" id="searchBox" placeholder="Search crop... e.g. Tomato" />
+
+    
+    <select id="stateDropdown">
+      <option value="">All States</option>
+      
+    </select>
+
+    
+    <select id="sortDropdown">
+      <option value="">No Sorting</option>
+      <option value="low">Price: Low to High</option>
+      <option value="high">Price: High to Low</option>
+    </select>
+
+  </div>
+
+  
+  <p id="resultCount" class="result-count"></p>
+
+  
+  <div id="cardContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
