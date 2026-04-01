@@ -1,4 +1,5 @@
-# 🌾 Crop Data & Revenue Dashboard
+# 🌾 KRISHI BAZAAR
+
 
 A lightweight vanilla JavaScript and HTML web application that fetches and visualizes agricultural crop data and revenue statistics from the [Open Government Data (OGD) Platform India](https://api.data.gov.in).
 
